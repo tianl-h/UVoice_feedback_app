@@ -2,14 +2,14 @@
 * @Author: tianl
 * @Date:   2021-03-14 16:43:52
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-14 20:15:21
+* @Last Modified time: 2021-03-14 20:18:23
 */
 
 const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send({hi: 'there'});
+    res.send({屁屁你好});
 });
 
 // UPPER CASE denot cannot be changed in the future
