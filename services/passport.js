@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-15 01:23:23
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-15 21:40:24
+* @Last Modified time: 2021-03-15 23:58:26
 */
 
 const passport = require('passport');
@@ -28,7 +28,9 @@ passport.use(
         {
             clientID: keys.googleClientID,
             clientSecret: keys.googleClientSecret,
-            callbackURL: '/auth/google/callback'
+            callbackURL: '/auth/google/callback',
+            // callbackURL: 'https://floating-journey-49522.herokuapp.com/auth/google/callback'
+            proxy: true
         }, 
         (accessToken, refreshToken, profile, done) => {
             User.findOne({ googleId: profile.id }).then((existingUser) => {
