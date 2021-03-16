@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-14 16:43:52
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-15 21:50:10
+* @Last Modified time: 2021-03-16 01:07:16
 */
 
 // const authRoutes = require('./routes/authRoutes');
@@ -26,7 +26,7 @@ const app = express();
 app.use(
     cookieSession({
         maxAge: 30 * 24 * 60 * 60 * 1000,
-        keys: [keys.cookieKey]
+        keys: [keys.cookieKey],
     })
 );
 
