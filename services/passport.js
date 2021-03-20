@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-15 01:23:23
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-16 00:40:55
+* @Last Modified time: 2021-03-16 18:38:31
 */
 
 const passport = require('passport');
@@ -32,18 +32,17 @@ passport.use(
             proxy: true
             // callbackURL: 'https://floating-journey-49522.herokuapp.com/auth/google/callback'
         }, 
-        (accessToken, refreshToken, profile, done) => {
-            User.findOne({ googleId: profile.id }).then((existingUser) => {
-                if (existingUser) {
-                    // we already have a record with the given id
-                    done(null, existingUser);
-                } else {
-                    // we don't have a user record with this ID, make a new record
-                    new User({ googleId: profile.id})
-                    .save()
-                    .then(user => done(null, user));
-                }
-            });
+        async (accessToken, refreshToken, profile, done) => {
+            const existingUser = await User.findOne({ googleId: profile.id })
+            if (existingUser) {
+                // we already have a record with the given id
+                return done(null, existingUser);
+            } 
+
+            // we don't have a user record with this ID, make a new record
+            const user = await new User({ googleId: profile.id}).save()
+            done(null, user);
+
         }
     )
 );
