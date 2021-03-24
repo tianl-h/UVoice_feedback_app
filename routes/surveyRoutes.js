@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-20 22:24:27
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-24 17:17:34
+* @Last Modified time: 2021-03-24 17:34:41
 */
 const _ = require('lodash');
 const { Path } = require('path-parser');
@@ -25,7 +25,7 @@ module.exports = app => {
         res.send(surveys);
     });
 
-    app.get('api/surveys/:surveyId/:choice', (req, res) => {
+    app.get('/api/surveys/:surveyId/:choice', (req, res) => {
         res.send('Thanks for voting!');
     });
 
@@ -45,11 +45,9 @@ module.exports = app => {
         // res.send({});
         _.chain(req.body)
           .map(({ email, url }) => {
-            if (url) {
-                const match = p.test(new URL(url).pathname);
-                if (match) {
-                  return { email, surveyId: match.surveyId, choice: match.choice };
-                }
+            const match = p.test(new URL(url).pathname);
+            if (match) {
+              return { email, surveyId: match.surveyId, choice: match.choice };
             }
           })
           .compact()
