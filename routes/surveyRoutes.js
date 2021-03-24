@@ -2,11 +2,11 @@
 * @Author: tianl
 * @Date:   2021-03-20 22:24:27
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-24 16:04:07
+* @Last Modified time: 2021-03-24 16:17:27
 */
 const _ = require('lodash');
-const { Path } = require('path-parser');
-// const Path = require('path-parser').default;
+// const { Path } = require('path-parser');
+const Path = require('path-parser').default;
 const { URL } = require('url');
 const mongoose = require('mongoose');
 const requireLogin = require('../middlewares/requireLogin');
