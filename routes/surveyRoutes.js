@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-20 22:24:27
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-24 10:26:05
+* @Last Modified time: 2021-03-24 14:59:03
 */
 const _ = require('lodash');
 const { Path } = require('path-parser');
@@ -29,7 +29,7 @@ module.exports = app => {
     });
 
     app.post('/api/surveys/webhooks', (req, res) => {
-        const p = new Path('/api/surveys/:surveyId/:choice');
+        const p = new Path('api/surveys/:surveyId/:choice');
 
         // const events = _.map(req.body, ({ email, url }) => {
         //     const match = p.test(new URL(url).pathname);
