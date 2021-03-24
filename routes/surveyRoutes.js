@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-20 22:24:27
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-24 15:06:44
+* @Last Modified time: 2021-03-24 15:17:32
 */
 const _ = require('lodash');
 const { Path } = require('path-parser');
@@ -24,12 +24,12 @@ module.exports = app => {
         res.send(surveys);
     });
 
-    app.get('/api/surveys/:surveyId/:choice', (req, res) => {
+    app.get('api/surveys/:surveyId/:choice', (req, res) => {
         res.send('Thanks for voting!');
     });
 
     app.post('api/surveys/webhooks', (req, res) => {
-        const p = new Path('/api/surveys/:surveyId/:choice');
+        const p = new Path('api/surveys/:surveyId/:choice');
 
         // const events = _.map(req.body, ({ email, url }) => {
         //     const match = p.test(new URL(url).pathname);
