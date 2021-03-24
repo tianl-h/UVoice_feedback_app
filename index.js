@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-14 16:43:52
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-19 23:13:41
+* @Last Modified time: 2021-03-23 19:15:37
 */
 
 // const authRoutes = require('./routes/authRoutes');
@@ -15,9 +15,10 @@ const passport = require('passport');
 const keys = require('./config/keys');
 const bodyParser = require('body-parser');
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 
-
+mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
 // const db = require('./config/keys').mongoURI;
 // mongoose.connect(db, { useNewUrlParser: true });
@@ -37,6 +38,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 // app.get('/', (req, res) => {
 //     res.send({bye: 'buddy'});
 // });

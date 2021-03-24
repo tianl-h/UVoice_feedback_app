@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-16 18:51:40
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-17 11:06:45
+* @Last Modified time: 2021-03-21 16:19:52
 */
 import 'materialize-css/dist/css/materialize.min.css'
 import React from 'react';
@@ -13,6 +13,10 @@ import reduxThunk from 'redux-thunk';
 
 import App from './components/App';
 import reducers from './reducers';
+
+// Development only axios helpers!
+import axios from 'axios';
+window.axios = axios;
 
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
