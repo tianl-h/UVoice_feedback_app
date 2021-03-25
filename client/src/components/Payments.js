@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-17 11:09:22
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-17 23:59:58
+* @Last Modified time: 2021-03-25 02:34:04
 */
 import React, { Component } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
@@ -13,7 +13,7 @@ class Payments extends Component {
     render() {
         return (
             <StripeCheckout 
-                name='Emaily'
+                name='UVoice'
                 description="$5 for 5 email credits"
                 amount={500}
                 token={token => this.props.handleToken(token)}

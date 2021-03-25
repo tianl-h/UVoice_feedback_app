@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-16 21:45:37
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-18 01:26:41
+* @Last Modified time: 2021-03-25 02:29:11
 */
 
 import React, { Component } from 'react';
@@ -37,7 +37,7 @@ class Header extends Component {
                         to={this.props.auth ? '/surveys' : '/'} 
                         className = "left brand-logo"
                     >
-                        Emaily
+                        UVoice
                     </Link>
                     <ul className="right">
                         {this.renderContent()}
