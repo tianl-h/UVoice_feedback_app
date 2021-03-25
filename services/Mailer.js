@@ -2,7 +2,7 @@
 * @Author: tianl
 * @Date:   2021-03-21 11:31:14
 * @Last Modified by:   tianl
-* @Last Modified time: 2021-03-25 02:36:42
+* @Last Modified time: 2021-03-25 02:47:03
 */
 const sendgrid = require('sendgrid');
 const helper = sendgrid.mail;
@@ -13,7 +13,7 @@ class Mailer extends helper.Mail {
         super();
 
         this.sgApi = sendgrid(keys.sendGridKey);
-        this.from_email = new helper.Email('no-reply@gmail.com');
+        this.from_email = new helper.Email('tianlinghou@gmail.com');
         this.subject = subject;
         this.body = new helper.Content('text/html', content);
         this.recipients = this.formatAddresses(recipients);
