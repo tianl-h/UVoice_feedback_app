@@ -12,7 +12,7 @@ const Landing = () => {
             <h1>
              UVoice!
             </h1>
-            Collect feddback from your users
+            Collect feedback from your users
         </div>
     );
 };
