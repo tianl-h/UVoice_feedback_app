@@ -10,7 +10,7 @@ Homepage
 Login  
 <img src="/Images/Login_.jpg">  
 2. Users need to pay for email credits via Stripe  
-<img src="/Images/Payment.jpg">  
+<img src="/Images/Payment.png">  
 3. Users create a new 'campaign' and enter a list of emails to send surveys to  
 <img src="/Images/Survey_.jpg">  
 Confirmation Page  
