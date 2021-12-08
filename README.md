@@ -3,14 +3,22 @@ UVoice is a B2C feedback collection app. It is currently deployed [here](https:/
 ## App Overview
 This is a feedback collection application for business companies to to send survey emails to a big list of customers to collect feedbacks. If you are a startup owner/product manager and want to collect feedbacks from your customers, you can use this application to send emails requesting feedback and get tabulation of results.
 
-## App User Flow:
-1. Users sign up via Google OAuth
-2. Users need to pay for email credits via Stripe
-3. Users create a new 'campaign'
-4. Users enter a list of emails to send surveys to
-5. The app will send emails to a list of surveyees
-6. Surveyees click on the link in the email to provide feedback
-7. Users can see reports of all survey responses
+## App User Flow:  
+1. Users sign up via Google OAuth  
+Homepage  
+<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/WelcomePage_.jpg" width="800">   
+Login  
+<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Login_.jpg" width="800">  
+2. Users need to pay for email credits via Stripe  
+<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Payment.jpg" width="800">  
+3. Users create a new 'campaign' and enter a list of emails to send surveys to  
+<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Survey_.jpg" width="800">  
+Confirmation Page  
+<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Confirmation_.jpg" width="800">  
+4. The app will send emails to a list of surveyees and surveyees click on the link in the email to provide feedback  
+<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Email_.jpg" width="800">   
+5. Users can see reports of all survey responses  
+<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Feedback_.jpg" width="800">  
 
 ## Tech Stack: 
 Main tech for main steps (some smaller libraries not included):
