@@ -1,7 +1,7 @@
 # UVoice: Feedback collection App
 UVoice is a B2C feedback collection app. It is currently deployed [here](https://floating-journey-49522.herokuapp.com/)!.
 ## App Overview
-This is a feedback collection application for business companies to to send survey emails to a big list of customers to collect feedbacks. If you are a startup owner/product manager and want to feedbacks from your customers, you can use this application to send emails requesting feedback and get tabulation of results.
+This is a feedback collection application for business companies to to send survey emails to a big list of customers to collect feedbacks. If you are a startup owner/product manager and want to collect feedbacks from your customers, you can use this application to send emails requesting feedback and get tabulation of results.
 
 ## App User Flow:
 1. Users sign up via Google OAuth
@@ -23,7 +23,8 @@ Main tech for main steps (some smaller libraries not included):
 7. **Deploy:** Heroku.
 
 ## Run:
-To run this project:
-git clone https://github.com/tthh1995/UVoice_feedback_app.git
-npm i (to install the dependencies
-npm run dev (to start the local server)
+To run this project:  
+git clone https://github.com/tthh1995/UVoice_feedback_app.git  
+npm i (to install the dependencies  
+npm run dev (to start the local server)  
+
