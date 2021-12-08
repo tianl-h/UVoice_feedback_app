@@ -8,17 +8,17 @@ This is a feedback collection application for business companies to to send surv
 Homepage  
 <img src="/Images/WelcomePage_.jpg">   
 Login  
-<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Login_.jpg" width="220" height="240">  
+<img src="/Images/Login_.jpg">  
 2. Users need to pay for email credits via Stripe  
-<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Payment.jpg">  
+<img src="/Images/Payment.jpg">  
 3. Users create a new 'campaign' and enter a list of emails to send surveys to  
-<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Survey_.jpg">  
+<img src="/Images/Survey_.jpg">  
 Confirmation Page  
-<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Confirmation_.jpg">  
+<img src="/Images/Confirmation_.jpg">  
 4. The app will send emails to a list of surveyees and surveyees click on the link in the email to provide feedbacks  
-<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Email_.jpg">   
+<img src="/Images/Email_.jpg">   
 5. Users can see reports of all survey responses  
-<img src="https://github.com/tthh1995/UVoice_feedback_app/tree/master/Images/Feedback_.jpg">  
+<img src="/Images/Feedback_.jpg">  
 
 ## Tech Stack: 
 Main tech for main steps (some smaller libraries not included):
