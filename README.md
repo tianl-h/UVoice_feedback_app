@@ -32,7 +32,7 @@ Main tech for main steps (some smaller libraries not included):
 
 ## Run:
 To run this project:  
-git clone https://github.com/tthh1995/UVoice_feedback_app.git  
+git clone https://github.com/tianl-h/UVoice_feedback_app.git
 npm i (to install the dependencies)  
 npm run dev (to start the local server)  
 
